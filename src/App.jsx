@@ -8,7 +8,7 @@ import No_clients from "./components/clients/No_clients";
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Login_and_Register />} />
           <Route path="/*" element={<Navbar/>}/>
